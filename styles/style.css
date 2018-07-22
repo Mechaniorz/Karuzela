@@ -1,0 +1,44 @@
+@keyframes slidy {
+0% { transform: translateX(0%); }
+10% { transform: translateX(0%); }
+40% { transform: translateX(-20%); }
+60% { transform: translateX(-20%); }
+90% { transform: translateX(0%); }
+100% { transform: translateX(0%); }
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.carousel_wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.carousel {
+	width: 1500px;
+	display: flex;
+	animation: 15s slidy infinite;
+}
+
+.carousel_box {
+	flex: 1;
+	max-width: 280px;
+	text-align: center;
+	padding: 10px;
+}
+
+.carousel_box-image {
+	width: 280px;
+	height: 280px;
+	border-radius: 50%;
+	background-position: center;
+    background-size: 100%;
+}
